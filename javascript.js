@@ -1,7 +1,12 @@
-second attempt
 
-var year = $("#year-input").val();
-var month = $("#month-input").val();
+$("#keyWordsButton").on("click", function(event) {
+    var keywords = $("#keywords").val();
+
+event.preventDefault();
+
+$("#yearButton").on("click", function(event)) {
+    var year = $("#year").val();
+}
 
 var url = "https://api.nytimes.com/svc/archive/v1/2016/1.json";
 url += '?' + $.param({
