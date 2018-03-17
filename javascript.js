@@ -17,6 +17,8 @@
     url: url,
     method: 'GET',
     }).done(function(result) {
+     var p = $("<div>")
+        p.text(result[i].response);
     console.log(result);
     }).fail(function(err) {
     throw err;
